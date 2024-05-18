@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilos generales */
+body {
+  background-color: #3362ed;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima de la ventana del navegador */
+}
+
+header {
+  background-color: #2316d4;
+  padding: 20px;
+}
+
+main {
+  flex-grow: 1; /* Hace que el contenido del main ocupe todo el espacio restante */
+}
+
+/* Estilos específicos para las secciones en el header */
+.header-section {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.class1 {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  background-color: #cccccc00;
+  height: 100px;
+}
+
+.class2 {
+  background-color: #cccccc00;
+  height: 100px;
+}
+
+.logo {
+  width: 6rem;
+  height: 6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 1rem;
+  align-self: flex-end; /* Para alinear el logo al final */
+}
+
+/* Estilos para la sección en el main */
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Estilo del botón del dropdown */
+.dropbtn {
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  border-radius: 30px;
+  color: black;
+  padding: 5px 5px;
+}
+
+/* Estilo del contenedor del dropdown */
+.dropdown {
+  position: center;
+  display: inline-block;
+  margin: 3rem;
+  margin-top: 20pt;
+  align-items: center;
+  font-size: 2rem;
+}
+
+/* Estilo del contenido del dropdown */
+.dropdown-content {
+  font-size: 1.5rem;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Estilo de los elementos de la lista del dropdown */
+.dropdown-content ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.dropdown-content ul li {
+  padding: 10px;
+}
+
+/* Cambia el color del texto cuando se pasa el mouse sobre los elementos de la lista */
+.dropdown-content ul li a:hover {
+  color: rgb(255, 0, 0);
+}
+
+/* Muestra el contenido del dropdown al pasar el mouse sobre el botón */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.cards {
+  margin-bottom: 20px;
+}
+
+/* Estilos para las tarjetas */
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 6px 5px;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  width: 500px;
+  height: 200px;
+  background-color: #d51212;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra para dar profundidad */
+}
+
+.icono {
+  color: white;
+  margin-right: 3px; /* Espacio entre el icono y el texto */
+  width: 1rem;
+  height: 1rem;
+}
+
+.footer-section {
+  background-color: #2316d4cc;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.boxFecha {
+  background-color: #3362ed;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  padding: 5px;
+  display: inline-block; /* Ajuste al contenido */
+}
+
+p {
+  color: #f9f9f9;
+  text-shadow: 1px 2px 2px black;
+  font-size: 1.2rem;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 3rem;
+  text-shadow: 0 0 5px #0ff,
+    /* Primer nivel de sombra (cerca del texto) */ 0 0 10px #0ff,
+    /* Segundo nivel de sombra */ 0 0 20px #0ff,
+    /* Tercer nivel de sombra */ 0 0 40px #0ff,
+    /* Cuarto nivel de sombra (lejos del texto) */ 0 0 80px #0ff,
+    /* Quinto nivel de sombra */ 0 0 160px #0ff; /* Sexto nivel de sombra */
+}
+
+.inner-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 10px; /* Ajusta la posición vertical del título según sea necesario */
+  left: 10px; /* Ajusta la posición horizontal del título según sea necesario */
+  color: #1303c8; /* Color del texto del título */
+  font-size: 1.5rem; /* Tamaño de fuente del título */
+  font-weight: bold; /* Establece el peso de la fuente del título */
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 2px 4px 4px black;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  border-radius: 10px; /* Aplica el mismo radio de borde que el contenedor principal */
+}
+
+.social a {
+  color: #ffffff; /* Blanco */
+  margin: 0 10px;
+  text-shadow: 1px 4px 4px black;
+}
+
+input {
+  border-radius: 0.5rem;
+}
